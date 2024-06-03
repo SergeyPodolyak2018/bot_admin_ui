@@ -1,0 +1,219 @@
+@import '../../../../../styles/devices.mixins';
+.chartContainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+  @include medium-desktop {
+    width: 200px;
+    height: 200px;
+  }
+
+  @include small-desktop {
+    width: 150px;
+    height: 150px;
+  }
+
+  @include tablet-width {
+    width: 150px;
+    height: 150px;
+  }
+  @include mobile-width {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.canvas {
+  border-radius: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+//.div::before,
+//.div::after {
+//  border-radius: inherit;
+//  box-sizing: inherit;
+//  content: "";
+//  position: absolute;
+//  width: 100%;
+//  height: 100%;
+//}
+
+.base {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 100%;
+  //width: 200px;
+  //height: 200px;
+}
+
+.lens {
+  box-shadow:
+    inset 6px 6px 10px rgb(152 152 152 / 45%),
+    6px 6px 10px rgb(0 0 0 / 27%),
+    inset 15px 13px 20px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 213px;
+  height: 213px;
+  position: relative;
+  border-radius: 100%;
+  background-color: #ffffff;
+  z-index: 99999;
+  &.pulsatingCircle {
+    animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+  }
+  &.pulsatingCircle:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background-color: #6b6b6b;
+    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+
+  @include medium-desktop {
+    width: 180px;
+    height: 180px;
+  }
+
+  @include small-desktop {
+    width: 150px;
+    height: 150px;
+  }
+
+  @include tablet-width {
+    width: 150px;
+    height: 150px;
+  }
+
+  @include mobile-width {
+    width: 150px;
+    height: 150px;
+  }
+
+  @include laptop-max-height-790 {
+    width: 120px;
+    height: 120px;
+  }
+
+  @include laptop-max-height-640 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    //transform: scale(.7);
+    opacity: 0.2;
+  }
+  50% {
+    //transform: scale(.7);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.reflections,
+.reflections::before,
+.reflections::after {
+  background-image: radial-gradient(
+    transparent 19%,
+    #ec32aa 23%,
+    #d4f6fc 28%,
+    #ec32aa 33%,
+    transparent 36%,
+    transparent 38%,
+    #e558d0 40%,
+    #d0fcfe 45%,
+    #ce73df 50%,
+    transparent 52%,
+    transparent 56%,
+    #b883e7 60%,
+    #b7ffff 65%,
+    #3564c7 72%,
+    transparent
+  );
+  background-size: 182px 182px;
+  background-position: top center;
+  border-radius: 15px 15px 5px 5px/5px 5px 15px 15px;
+  filter: blur(4px);
+  position: absolute;
+  top: 26px;
+  width: 58px;
+  height: 75px;
+  box-sizing: border-box;
+}
+
+.reflections {
+  left: 69px;
+  transform: perspective(30px) rotate3d(1, 0, 0, -15deg);
+  transform-origin: top;
+}
+
+.reflections::before,
+.reflections::after {
+  height: 45px;
+  top: 28px;
+}
+
+.reflections::before {
+  left: -65px;
+  transform: rotate(-43deg);
+}
+
+.reflections::after {
+  right: -65px;
+  transform: rotate(43deg);
+}
+
+.audioWaveCanvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.text {
+  margin-top: 2em;
+  color: #79b4ba;
+}
+
+.animation {
+  background: radial-gradient(#9721be, #474f6d, #481f86);
+  mix-blend-mode: color-dodge;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}

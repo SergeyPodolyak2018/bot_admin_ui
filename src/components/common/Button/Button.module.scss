@@ -1,0 +1,62 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/devices.mixins';
+.button {
+  z-index: 350;
+  height: fit-content;
+  width: fit-content;
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid #1f1f1f;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  transition:
+    box-shadow 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+
+  font-family: $helvetica, sans-serif;
+
+  @include small-desktop {
+    font-size: 14px;
+  }
+  &:hover {
+    box-shadow: none;
+    color: #1f1f1f;
+    background-color: white;
+  }
+  &.inverse {
+    color: #1f1f1f;
+    background-color: white;
+    svg {
+      fill: black;
+    }
+    &:hover {
+      svg {
+        fill: white;
+      }
+      box-shadow: none;
+      color: white;
+      background-color: #1f1f1f;
+    }
+  }
+
+  &.disabled {
+    border-color: #c9c9c9;
+    background-color: #c9c9c9;
+    color: white;
+    border: 1px solid;
+  }
+  img {
+    .hover {
+      svg {
+        fill: white;
+      }
+    }
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+  }
+}

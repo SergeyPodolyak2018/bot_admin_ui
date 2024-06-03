@@ -1,0 +1,81 @@
+@import '../../../../styles/devices.mixins';
+
+.main {
+
+  @include mobile-width {
+    flex-basis: 100%;
+  }
+  @include tablet-width {
+    flex-basis: 100%;
+  }
+  @include small-desktop {
+    flex-basis: 100%;
+  }
+
+  box-sizing: border-box !important;
+  flex-basis: calc((100% / 3));
+  height: 100%;
+  min-height: 272px;
+  //max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  @include mobile-width {
+    gap: 24px;
+  }
+}
+
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  > div {
+    flex: 1
+  }
+
+  > div:last-child {
+    text-align: right;
+  }
+}
+
+.table {
+  td {
+    padding-top: 10px;
+  }
+
+  > tr:last-child {
+    text-align: right;
+  }
+
+  tr {
+    border-bottom: 1px solid rgba(234, 238, 244, 1)
+  }
+}
+
+.tableTitle {
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  text-align: left;
+  color: rgba(179, 179, 179, 1);
+  text-transform: uppercase;
+}
+
+.tableText {
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(31, 31, 31, 1)
+}

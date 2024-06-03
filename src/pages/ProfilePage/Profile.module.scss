@@ -1,0 +1,148 @@
+@import '../../styles/color.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/font_style.scss';
+@import '../../styles/devices.mixins';
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: var(--page-header-padding);
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  //width: 100%;
+}
+.mainContainer {
+  padding-top: 40px;
+  width: 400px;
+}
+
+.title {
+  font-family: $helvetica, sans-serif;
+  color: $text-color;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 9px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.subTitle {
+  @extend .title;
+  color: $gray-text-color;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+  //width: calc(100vh - 50px);
+  @include mobile-width {
+    gap: 16px;
+  }
+}
+
+.avatarContainer {
+  display: flex;
+  gap: 14px;
+}
+
+.uploadTitle {
+  display: flex;
+  gap: 50px;
+}
+
+.uploadButton {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  justify-content: space-between;
+  & label {
+    align-items: center;
+    width: fit-content;
+    padding: 0;
+    @include textStandard1619;
+    color: rgba(31, 31, 31, 1);
+    text-transform: none;
+  }
+  & p {
+    @include textStandard1624400;
+    color: rgba(114, 114, 114, 1);
+  }
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subhader {
+  @include textStandard1624400;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: rgba(31, 31, 31, 1);
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.formElement {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 520px;
+}
+
+.subwrapper {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition:
+    background-color 5000s ease-in-out 0s,
+    color 5000s ease-in-out 0s;
+}
+.switcher {
+  @include textStandard1619;
+  color: rgba(31, 31, 31, 1);
+  span {
+    font-family: $helvetica !important;
+  }
+}
+.helperText {
+  color: rgba(114, 114, 114, 1) !important;
+  @include navigation;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 19px !important;
+  margin-left: 0px !important;
+  margin-top: 4px;
+  font-family: $helvetica !important;
+}
+.tryButton {
+  color: rgba(255, 255, 255, 1);
+  font-family:
+    Helvetica Neue,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}

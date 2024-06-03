@@ -1,0 +1,75 @@
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/color.scss';
+
+.paymentCard {
+  width: 379px;
+  height: 274px;
+  border-radius: 20px;
+  background: radial-gradient(113.26% 175.39% at 14.67% -17.64%, #000000 0%, #737374 100%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border: 1px solid rgba(114, 114, 114, 1);
+
+  &__header {
+    display: flex;
+    
+    align-items: center;
+    & button{
+      width: 73px;
+      height: 33px;
+      @include textSmall14
+    }
+  }
+
+  .defaultLabel {
+    width: 45px;
+    height: 17px;
+    padding: 8px 14px 8px 14px;
+    border-radius: 20px;
+    background-color: white;
+    color: $text-color;
+  }
+
+  .cardNumber {
+    font-family: $helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $white;
+    display: flex;
+    gap: 10px;
+    height: 20px;
+  }
+}
+
+.expireHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  .expireLabel {
+    font-family: $helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $white;
+  }
+
+  .expireDateLabel {
+    width: fit-content;
+    color: $white;
+    font-family: $helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.6);
+
+  }
+}

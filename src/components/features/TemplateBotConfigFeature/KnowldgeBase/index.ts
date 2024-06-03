@@ -1,0 +1,1 @@
+export * from './KnowldgeBase.tsx';

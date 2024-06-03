@@ -1,0 +1,54 @@
+.button {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #1f1f1f;
+  border: 1.5px solid #1f1f1f;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 58px;
+
+  transition:
+    box-shadow 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+  cursor: grab;
+
+  &:hover {
+    box-shadow: none;
+    color: white;
+    background-color: #1f1f1f;
+  }
+
+  &.selected {
+    box-shadow: none;
+    color: white;
+    background-color: #1f1f1f;
+  }
+
+  &.disabled {
+    border-color: #d1d6de;
+    background-color: #d1d6de;
+    color: #afbbcc;
+    border: 1px solid;
+  }
+}
+
+.iconHolder {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 9px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:
+    bottom center,
+    50%,
+    50%;
+}

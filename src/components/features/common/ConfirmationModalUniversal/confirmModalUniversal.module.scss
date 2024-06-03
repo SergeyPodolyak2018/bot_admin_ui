@@ -1,0 +1,57 @@
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/color.scss';
+
+.mainWrapper{
+  border-radius: 10px;
+}
+.content {
+  width: 529px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid;
+  border-image-source: radial-gradient(49.59% 163.62% at 49.59% 50.75%, #9CA3B0 0%, #666F80 0.01%, rgba(156, 163, 176, 0.01) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  radial-gradient(50% 164.97% at 50% 50%, #9CA3B0 0%, rgba(156, 163, 176, 0.01) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+.wrapper{
+  width: calc(100% - 88px);
+  height: calc(100% - 88px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+  position: relative;
+  
+}
+.title{
+  width: 100%;
+  @include headerText;
+}
+.subcontent{
+  width: 100%;
+  font-family: Helvetica Neue, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+
+  & div {
+    @include textStandard1624400;
+  }
+  
+  & span{
+    @include textStandard1624400;
+  }
+  }
+  
+.buttonHolder{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

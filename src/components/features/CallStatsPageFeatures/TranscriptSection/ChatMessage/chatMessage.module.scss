@@ -1,0 +1,107 @@
+@import '../../../../../styles/fonts.scss';
+@import '../../../../../styles/color.scss';
+@import '../../../../../styles/devices.mixins';
+.avatar {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.wrapper {
+  display: inline-flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 4px;
+
+  &.incoming {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    border-left: none;
+    border-radius: 10px 0px 10px 10px;
+    left: calc(52% - 20px);
+
+    .avatar {
+      background: #aaaafd;
+    }
+  }
+}
+.icon {
+  width: 22px;
+  height: 22px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+
+  border-radius: 0px 10px 10px 10px;
+  // border-left: 2px solid var(--Blue-Menu, #066dcc);
+  .message__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__name,
+    &__duration {
+      font-family: $helvetica, sans-serif;
+      font-size: 16px;
+      color: $text-color;
+      line-height: 24px;
+      @include small-desktop {
+        font-size: 14px;
+      }
+      @include tablet-width {
+        font-size: 14px;
+      }
+    }
+
+    .message__header__button {
+      cursor: pointer;
+      display: flex;
+    }
+
+    .message__header__sentiment {
+      margin-left: auto;
+      display: flex;
+    }
+
+    .avatar {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      border-radius: 50%;
+      background: #066dcc;
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  &.incoming {
+    // margin-left: auto;
+    left: calc(52% - 20px);
+    // border-right: 2px solid var(--Voilet, #aaaafd);
+    border-left: none;
+    border-radius: 10px 0px 10px 10px;
+
+    .avatar {
+      background: #aaaafd;
+    }
+  }
+
+  &__content {
+    &__text {
+      font-family: $helvetica, sans-serif;
+      font-size: 16px;
+      color: $text-color;
+      line-height: 24px;
+      @include small-desktop {
+        font-size: 14px;
+      }
+      @include tablet-width {
+        font-size: 14px;
+      }
+    }
+  }
+}

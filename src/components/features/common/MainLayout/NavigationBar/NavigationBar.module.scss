@@ -1,0 +1,80 @@
+@import '../../../../../styles/devices.mixins';
+.Navbar {
+  z-index: 1000;
+  padding: 0 1.5rem;
+  width: var(--nav-bar-width);
+  height: 100%;
+  background-color: #f6f9ff;
+  gap: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &--open {
+    display: none;
+    left: 0;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  @include smallTablet-width {
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    transition: left 0.3s ease-in-out;
+
+    &__btns {
+      display: none;
+    }
+
+    &--open {
+      display: block;
+      left: 0;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Navbar {
+    gap: 1.5rem;
+    padding: 0 14px;
+  }
+}
+
+@include laptop-width {
+  .Navbar {
+    gap: 1.5rem;
+    padding: 0 14px;
+  }
+}
+
+@include smallTablet-width {
+  .Navbar {
+    gap: 1rem;
+    padding: 0px 24px 0px 24px;
+    width: 284px;
+  }
+}
+
+@include mobile-width {
+  .Navbar {
+    gap: 1rem;
+    padding: 0 7px;
+    width: fit-content;
+  }
+}

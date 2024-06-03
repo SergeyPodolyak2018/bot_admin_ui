@@ -1,0 +1,69 @@
+@import '../../../styles/color.scss';
+@import '../../../styles/font_style.scss';
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: calc(100vh - var(--page-header, 0));
+  position: relative;
+  justify-content: space-between;
+  padding: var(--page-header-padding);
+}
+.title {
+  font-family: $helvetica, sans-serif;
+  color: $text-color;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.headerContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.template_holder {
+  width: 100%;
+  height: calc(100% - 120px);
+  overflow-y: scroll;
+  padding: 24px 8px 24px 24px;
+  border: 1px solid #d8dbdf;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: space-around;
+}
+
+.footer {
+  //height: 30px;
+  width: 100%;
+  @include textStandard1624;
+  color: $black;
+  display: flex;
+  align-items: center;
+}

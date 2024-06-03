@@ -1,0 +1,67 @@
+@import '../../../styles/color';
+@import '../../../styles/fonts.scss';
+
+.editableWrapper {
+  display: flex;
+  flex-direction: column;
+  // position: relative;
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.pseudoInput {
+  width: calc(100% - 30px);
+  height: 300px;
+  overflow-y: scroll;
+  padding: 8px 14px 8px 14px;
+
+  span {
+    font-family: $helvetica, sans-serif;
+    font-size: 16px;
+    color: currentColor;
+  }
+  div {
+    font-family: $helvetica, sans-serif;
+
+    font-size: 16px;
+    color: currentColor;
+  }
+
+  font-family: $helvetica, sans-serif;
+  letter-spacing: inherit;
+  color: currentColor;
+  // padding: 4px 0 5px;
+  border: 1px solid #9ca3b0;
+  border-radius: 10px;
+  box-sizing: content-box;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  height: fit-content;
+  font-size: 16px;
+  // border: none;
+  outline: none;
+  border-bottom: 1px solid #919192;
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #1976d2;
+  }
+  &:hover {
+    outline: none;
+    border-bottom: 2px solid #919192;
+  }
+  & i {
+    background: linear-gradient(
+      0deg,
+      rgb(0, 60, 255) 0%,
+      rgb(38, 78, 255) 3%,
+      rgb(255, 255, 255) 30%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}

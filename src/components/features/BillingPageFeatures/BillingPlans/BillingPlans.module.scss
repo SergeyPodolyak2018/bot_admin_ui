@@ -1,0 +1,10 @@
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/color.scss';
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}

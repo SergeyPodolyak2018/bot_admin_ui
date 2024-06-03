@@ -1,0 +1,26 @@
+@import '../../../../../styles/fonts.scss';
+@import '../../../../../styles/color.scss';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.disabled {
+  //color: #ccc;
+  cursor: default;
+  opacity: 0.5;
+  & .label {
+    //color: $disabled-text-color;
+  }
+}
+
+.label {
+  font-family: $helvetica;
+  font-size: 16px;
+  color: $text-color;
+}

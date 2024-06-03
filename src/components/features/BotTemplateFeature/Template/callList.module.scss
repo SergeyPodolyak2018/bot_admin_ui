@@ -1,0 +1,135 @@
+@import '../../../../styles/color.scss';
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/devices.mixins';
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: var(--page-header-padding);
+  height: calc(100vh - var(--page-header, 0));
+  position: relative;
+}
+.title {
+  font-family: $helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $text-color;
+}
+
+.sub_title {
+  font-family: $helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-text-color;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-between;
+}
+.template_holder {
+  width: 100%;
+  max-height: calc(100% - 73px);
+  // overflow-y: scroll;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  // justify-content: space-between;
+  gap: 20px;
+
+  @include small-desktop {
+    overflow: scroll;
+  }
+}
+
+.card {
+  height: 294px;
+  width: 512.33px;
+  height: 292px;
+  border-radius: 20px;
+  border: 1px;
+  // border: 1px solid;
+  // border-image-source: radial-gradient(49.59% 163.62% at 49.59% 50.75%, #9CA3B0 0%, #666F80 0.01%, rgba(156, 163, 176, 0.01) 100%),
+  // radial-gradient(50% 164.97% at 50% 50%, #9CA3B0 0%, rgba(156, 163, 176, 0.01) 100%);
+  border: 1px solid $grey;
+  cursor: pointer;
+  position: relative;
+  &.active {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+      border-radius: 20px;
+    }
+  }
+  @include medium-desktop {
+    width: 463px;
+    height: 242px;
+  }
+  @include small-desktop {
+    width: 463px;
+    height: 242px;
+  }
+}
+.card_img {
+  width: 514px;
+  height: 218px;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+  background-size: cover;
+  & .header {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include textStandard32;
+    color: $white;
+  }
+  @include medium-desktop {
+    width: 463px;
+    height: 166px;
+  }
+  @include small-desktop {
+    width: 463px;
+    height: 166px;
+  }
+}
+.footer {
+  height: calc(100% - 218px);
+  width: 485px;
+  margin: 0 auto;
+  @include textStandard1624;
+  line-height: 20px;
+  color: $black;
+  display: flex;
+  align-items: center;
+
+  @include medium-desktop {
+    width: 435px;
+    height: calc(100% - 166px);
+    @include textStandard14;
+    margin: 0 14px;
+  }
+  @include small-desktop {
+    width: 435px;
+    height: calc(100% - 166px);
+    @include textStandard14;
+    margin: 0 14px;
+  }
+  border-radius: 0 0 20px 20px;
+}

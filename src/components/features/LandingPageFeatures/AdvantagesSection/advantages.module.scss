@@ -1,0 +1,107 @@
+@import '../../../../styles/devices.mixins';
+@import '../../../../styles/text.mixins';
+@import '../../../../styles/fonts.scss';
+.container {
+  display: flex;
+  flex-direction: row;
+  // width: 100%;
+  justify-content: space-between;
+}
+.holder {
+  width: 100%;
+  height: calc(100vh - 146px);
+  padding-top: 146px;
+  @include laptop-max-height-790 {
+    height: fit-content;
+    overflow: hidden;
+  }
+
+  @include laptop-max-height-640 {
+    height: fit-content;
+    overflow: hidden;
+  }
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+.imagesContainer {
+  position: relative;
+  width: 776px;
+  height: 739px;
+  @include small-desktop {
+    width: 576px;
+    height: 539px;
+  }
+  @include mobile-width {
+    display: none;
+  }
+}
+
+.image1 {
+  position: absolute;
+  width: 36%;
+  height: auto;
+  top: 10%;
+  left: 20%;
+}
+
+.image2 {
+  position: absolute;
+  width: 13%;
+  height: auto;
+  top: 23%;
+  left: 66%;
+}
+
+.image3 {
+  position: absolute;
+  width: 14.5%;
+  height: auto;
+  top: 44%;
+  left: 0%;
+}
+
+.image4 {
+  position: absolute;
+  width: 36%;
+  height: auto;
+  top: 60%;
+  left: 24%;
+}
+
+.image5 {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 64%;
+  left: 68%;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-family: $helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f1f1f;
+}
+
+.text {
+  max-width: 512px;
+  font-family: $helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f1f1f;
+}

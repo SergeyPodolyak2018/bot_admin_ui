@@ -1,0 +1,238 @@
+{
+  "title": "test",
+  "botList": {
+    "createBot": "Create New Agent",
+    "name": "Agent Name",
+    "fieldName": "Name",
+    "organization": "Organization Name",
+    "id": "ID"
+  },
+  "account": {
+    "logout": "Logout"
+  },
+  "billingTabs": {
+    "addPaymentMethods": "Add payment method",
+    "pay": "Pay",
+    "subscribe": "Subscribe",
+    "addCard": "Add card",
+    "add": "Add",
+    "selectAmount": "Select amount",
+    "amount": "Amount"
+  },
+
+  "knowledgeTable": {
+    "primaryKeyTooltip": "Unique identifier that uniquely identifies each record.",
+    "useForSearchTooltip": "The data for record searches the user's query.",
+    "useForInstructionsTooltip": "The data obtained in the search results."
+  },
+
+  "callingListPageFeature": {
+    "status": "Status",
+    "interactions": "Interactions",
+    "type": "Type",
+    "botId": "Agent id",
+    "userId": "User id",
+    "questions": "Questions"
+  },
+  "callStatsPageFeatures": {
+    "contactHandler": "Contact Handler",
+    "numberDialled": "Number Dialled",
+    "startTime": "Start Time",
+    "user": "User",
+    "bot": "AI Agent",
+    "sentimentAnalysis": "Sentiment Analysis",
+    "positive": "Positive",
+    "neutral": "Neutral",
+    "negative": "Negative",
+    "topicDetected": "Keywords",
+    "audioStatus": "Topics summary",
+    "transcript": "Transcript",
+    "autoScroll": "Auto-scroll"
+  },
+  "configurationPageFeatures": {
+    "agentConfiguration": "Agent Configuration",
+    "schema": "Schema",
+    "widgetSettings": "Widget Settings",
+    "dontHaveBots": "No AI Agents yet. Please create new one.",
+    "configure": "Advanced Config",
+    "fromTemplate": "Create From Template",
+    "fromForm": "Create From Scratch",
+    "edit": "Edit",
+    "delete": "Delete",
+    "virtualAssistant": "Virtual assistant",
+    "you": "You",
+    "chatBot": "Chat AI Agent",
+    "inputYourMessage": "Input your message",
+    "addFile": "Add File",
+    "files": "Files",
+    "organizations": "Organizations",
+    "fileName": "File name",
+    "uploadFile": "Upload file",
+    "close": "Close",
+    "send": "Send",
+    "createAndAddCategory": "Create and Add Category",
+    "addPrompt": "Add Prompt",
+    "prompts": "Prompts",
+    "promptName": "Prompt name",
+    "promptText": "Prompt Text",
+    "create": "Create",
+    "isNoSource": "Is No Source",
+    "created": "Created",
+    "errorWithCreating": "Error with creating",
+    "iterator": "Iterator",
+    "fieldsForSearch": "Fields for search",
+    "fieldsForAnswerGeneration": "Fields for answer generation",
+    "updated": "Updated",
+    "errorWithUpdate": "Error with update",
+    "updateBot": "Update Agent",
+    "welcomeMessage": "Welcome Message",
+    "languageCode": "Language code",
+    "useContext": "Use Context",
+    "useRemarks": "Use Remarks",
+    "useHistory": "Use Previous Searches",
+    "file": "File",
+    "category": "Category",
+    "prompt": "Prompt",
+    "publish": "Save",
+    "nothingToUpdate": "Nothing to update",
+    "schemaUpdated": "Schema updated",
+    "agentConfigUpdated": "Agent configuration updated",
+    "schemaNotUpdated": "Schema not updated",
+    "agentConfigNotUpdated": "Agent configuration not updated",
+    "searchTest": "Search Test"
+  },
+  "confirmModal": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "deleteOrganization": "Delete organization",
+    "deleteTemplate": "Delete template",
+    "deleteTemplateType": "Delete template type"
+  },
+  "header": {
+    "title": "BOT CX",
+    "testName": "Test Name"
+  },
+  "landingPageFeatures": {
+    "AdvantagesSection": {
+      "title": "An Experience Tailored Just for You",
+      "text": "Creating your own assistant using BOT.ai is straightforward. There's no need for programming or IT complexities. Simply configure it, upload your data, and deploy it effortlessly, freeing your team to concentrate on essential tasks."
+    },
+    "ContactSection": {
+      "excitingAI": "Exciting AI",
+      "experiencesAwait": "Experiences await!",
+      "email": "EMAIL",
+      "letsResolvai": "LET'S BOT.AI"
+    },
+    "DemoCallSection": {
+      "sectionTitle": "Conversational Voice AI",
+      "title": "Live demo with our AI Agent is available right now",
+      "categoryLable": "Choose a category to see the AI Agent in action",
+      "connecting": "Connecting...",
+      "stopLiveDemonstration": "Press the button to stop a live demonstration",
+      "startLiveDemonstration": "Press the button to start a live demonstration right now",
+      "stopBot": "Stop Agent",
+      "startBot": "Run Agent",
+      "openBot": "Resume Chat",
+      "chat": "Chat",
+      "webCall": "Web Call"
+    },
+    "footer": {
+      "desc": "With BOT.ai, crafting your personalized AI-driven assistant is easy and fast. Tailor your AI Agent, seamlessly integrate data, and benefit from a smart, personalized assistant experience."
+    },
+    "header": {
+      "pricing": "Pricing",
+      "signIn": "Sign in",
+      "signUp": "Sign up",
+      "logout": "Logout"
+    },
+    "IntroductionSection": {
+      "text": "Our solution streamlines customer interactions, boosts user engagement, and takes your client experience to new heights. Easily and quickly create your own AI-powered virtual assistant uniquely tailored to your business needs.",
+      "tyItNow": "TRY IT NOW"
+    },
+    "LoginPage": {
+      "enterEmail": "Enter your email",
+      "emailLable": "Email*",
+      "enterPassword": "Enter your password",
+      "passwordLable": "Password*",
+      "incorrectCred": "Incorrect email or password",
+      "doesntHaveAccount": "Doesn't have an account?",
+      "serverErr": "Server Error"
+    },
+    "RegistrationPage": {
+      "signUp": "Sign up",
+      "createPassword": "Create a password",
+      "passwordRule": "Must be at least 6 characters.",
+      "confirmPassword": "Confirm a password",
+      "confirmPasswordLable": "Confirm Password*",
+      "passwordMismatch": "Password mismatch",
+      "createAccount": "Create account",
+      "alreadyHaveAccount": "Already have an account?"
+    }
+  },
+  "botTemplate": {
+    "header": "Templates",
+    "subHeader": "Use ready-made AI Agents from our templates for your field of activity.",
+    "restaurant": "Restaurants",
+    "healthcare": "Healthcare",
+    "foodDelivery": "FoodDelivery",
+    "restaurantText": "The restaurant's voice AI Agent streamlines food orders, shares specials, offers support, and facilitates post-order feedback.",
+    "HealthcareText": "The medical appointment AI Agent simplifies scheduling and provides availability information.",
+    "FoodDeliveryText": "The table reservation AI Agent simplifies booking and provides availability updates."
+  },
+  "TemplateBotConfig": {
+    "header": "Creating Your Agent",
+    "subHeader": "Use our recommendations to create a high-quality agent",
+    "agentConfiguration": "Agent  Configuration",
+    "knowledgeBase": "Knowledge Base",
+    "publish": "Publish",
+    "chatWidgetSettings": "Chat Widget Settings",
+    "searchTest": "Search Test",
+    "organization": "Organization",
+    "organizationText": "Select the organization to which the agent will belong",
+    "agentName": "Agent Name",
+    "agentNameText": "Please indicate what your agent should be called",
+    "welcomeMessage": "Welcome Message",
+    "welcomeMessageText": "Add a welcome message with which the agent will contact the user",
+    "chooseOrganization": "Choose Organization",
+    "enterYourBotName": "Enter Your AI Agent's Name",
+    "enterWelcome Message": "Enter Welcome Message",
+    "agentBehavior": "Agent Behavior",
+    "agentBehaviorText": "Choose the appropriate agent behavior",
+    "Short Answer": "Short Answer",
+    "Use only from menu": "Use only from menu",
+    "Do not invent": "Do not invent",
+    "prompt": "Prompt",
+    "promptText": "Specify how you want the agent to greet users",
+    "mainInstruction": "Main Instruction",
+    "design": "Design",
+    "tooltipPrompt": "Short description of AI Agent's general behavior",
+    "tooltipWelcome": "Use all of conversation history and previous knowledge base search results to generate future answers.",
+    "tooltipUseContext": "Use all of conversation history to generate future answers.",
+    "tooltipUseHistory": "Use all of conversation history and previous knowledge base search results to generate future answers.",
+    "tooltipUsePrevSearches": "Use previously found knowledge base data to generate future answers.",
+    "tooltipUseRemarks": "tooltipUseRemarks",
+    "schema": "Schema"
+  },
+  "TemplatePage": {
+    "selectBot": "Select AI Agent",
+    "createdTemplateSuccess": "Template created successfully",
+    "createdTemplateFail": "Template wasn't created",
+    "updatedTemplateSuccess": "Template updated successfully",
+    "updatedTemplateFail": "Template wasn't updated",
+    "deletedTemplateSuccess": "Template deleted successfully",
+    "deletedTemplateFail": "Template wasn't deleted",
+    "activateTemplate": "Template activated successfully",
+    "deactivateTemplate": "Template deactivated successfully",
+    "activateTemplateFail": "Template wasn't activate",
+    "deactivateTemplateFail": "Template wasn't deactivate",
+    "createdTemplateTypeSuccess": "Template type created successfully",
+    "createdTemplateTypeFail": "Template type wasn't created",
+    "updatedTemplateTypeSuccess": "Template type updated successfully",
+    "updatedTemplateTypeFail": "Template type wasn't updated",
+    "deletedTemplateTypeSuccess": "Template type deleted successfully",
+    "deletedTemplateTypeFail": "Template type wasn't deleted"
+  },
+  "organisationsPage": {
+    "createNewOrgaization": "Create New Orgaization"
+  }
+}

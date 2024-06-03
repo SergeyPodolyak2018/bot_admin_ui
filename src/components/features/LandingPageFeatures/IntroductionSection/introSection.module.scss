@@ -1,0 +1,217 @@
+@import '../../../../styles/devices.mixins';
+@import '../../../../styles/text.mixins';
+@import '../../../../styles/fonts.scss';
+
+.firstHandContainer {
+  position: absolute;
+  width: 30vw;
+  top: 14vh;
+  left: -35px;
+  img {
+    position: absolute;
+    bottom: 0;
+  }
+  @include smallTablet-width {
+    display: none;
+  }
+  @include mobile-width {
+    display: none;
+  }
+}
+
+.secondHandContainer {
+  position: absolute;
+  width: 30vw;
+  top: 40vh;
+  right: -30px;
+  transform: rotateZ(-177.13deg);
+
+  img {
+    position: absolute;
+    bottom: 0;
+  }
+  @include smallTablet-width {
+    display: none;
+  }
+  @include mobile-width {
+    display: none;
+  }
+}
+.container {
+  //padding-top: 350px;
+  height: 100vh;
+
+  @include mobile-width {
+    padding-top: 0;
+  }
+
+  @include smallTablet-width {
+    padding-top: 0;
+  }
+
+  .contentWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include small-desktop {
+      align-items: center;
+    }
+    @include smallTablet-width {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include mobile-width {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+
+      @include smallTablet-width {
+        width: 100%;
+        padding-top: 100px;
+        align-items: center;
+      }
+
+      @include mobile-width {
+        width: 100%;
+        padding-top: 70px;
+        align-items: center;
+      }
+
+      .title {
+        font-size: 120px;
+        font-weight: 700;
+        margin: 0;
+        color: #1f1f1f;
+        font-family: $helvetica, sans-serif;
+        line-height: 159px;
+        text-align: center;
+        // line-height: 40px;
+        // @include desctop-title;
+        // @include regular-desktop {
+        //   font-size: 90px;
+        //   text-align: center;
+        //   line-height: 129px;
+        // }
+        text-wrap: nowrap;
+        @include small-desktop {
+          font-size: 74px;
+          text-align: center;
+          line-height: 109px;
+        }
+        @include tablet-width {
+          @include h1-desktop-small;
+          text-align: center;
+        }
+
+        @include smallTablet-width {
+          @include h1-desktop-small;
+          text-align: center;
+        }
+        @include mobile-width {
+          @include h1-mobile;
+          text-align: center;
+        }
+      }
+      .text {
+        width: 100%;
+        text-align: center;
+        font-family: $helvetica, sans-serif;
+        line-height: 27px;
+        margin: 0;
+        font-size: 18px;
+        color: #1f1f1f;
+        width: 580px;
+
+        @include small-desktop {
+          @include h5-desktop-small;
+          width: 100%;
+        }
+
+        @include smallTablet-width {
+          @include h5-desktop-small;
+          text-align: center;
+          width: 100%;
+        }
+
+        @include mobile-width {
+          @include h5-mobile;
+          text-align: center;
+          width: 100%;
+        }
+      }
+      .button {
+        width: 170px;
+        height: 44px;
+        background-color: #6366f1;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(99, 102, 241, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+
+        transition:
+          box-shadow 0.3s,
+          background-color 0.3s,
+          color 0.3s;
+
+        &:hover {
+          box-shadow: none;
+          background-color: #4649b0;
+        }
+        a {
+          font-family: 'Manrope', sans-serif;
+          color: white;
+          text-decoration: none;
+        }
+
+        &.disabled {
+          border-color: #4649b0;
+          background-color: rgba(99, 102, 241, 0);
+          box-shadow: none;
+          color: #4649b0;
+          border: 1px solid;
+        }
+
+        @include smallTablet-width {
+          width: 120px;
+          height: 40px;
+          font-size: 14px;
+        }
+        @include mobile-width {
+          width: 120px;
+          height: 50px;
+          font-size: 14px;
+        }
+      }
+
+      .button:hover {
+        background-color: #27288f;
+      }
+
+      .button:active {
+        background-color: #4044ee;
+      }
+    }
+  }
+}

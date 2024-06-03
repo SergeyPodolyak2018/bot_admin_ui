@@ -1,0 +1,62 @@
+@import '../../../../../styles/fonts.scss';
+@import '../../../../../styles/color.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  font-family: $helvetica, sans-serif;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 24px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  & span {
+    font-family: $helvetica;
+    color: #727272;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+  :hover {
+    background-color: $hoveredBackground;
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #d8dbdf;
+  cursor: pointer;
+  position: relative;
+  & .hiden {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .label {
+    font-family: $helvetica, sans-serif;
+    color: $text-color;
+    font-size: 16px;
+  }
+}

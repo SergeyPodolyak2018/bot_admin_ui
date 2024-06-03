@@ -1,0 +1,44 @@
+.button {
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  color: white;
+  border: 1.5px solid #1f1f1f;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 58px;
+  position: relative;
+  transition:
+    box-shadow 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+
+  & .progress {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &:hover {
+    box-shadow: none;
+    color: #1f1f1f;
+    background-color: white;
+  }
+
+  &.disabled {
+    border-color: #1f1f1f;
+    background-color: rgba(99, 102, 241, 0);
+    color: #1f1f1f;
+    border: 1px solid;
+  }
+}

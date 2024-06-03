@@ -1,0 +1,72 @@
+@import '../../../../../styles/devices.mixins';
+@import '../../../../../styles/fonts.scss';
+
+.button {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-family: $helvetica sans-serif;
+  border: 1.5px solid #1f1f1f;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 58px;
+
+  @include tablet-width {
+    width: 153px;
+    height: 43px;
+  }
+  @include laptop-max-height-640 {
+    width: 193px;
+    height: 43px;
+  }
+  @include laptop-max-height-790 {
+    width: 193px;
+    height: 43px;
+  }
+
+  transition: background-color 0.3s,
+  color 0.3s;
+
+  &:hover {
+    box-shadow: none;
+    color: #ffffff;
+    background-color: #313131;
+  }
+
+  &.disabled {
+    border-color: #d1d6de;
+    background-color: #d1d6de;
+    color: #afbbcc;
+    border: 1px solid;
+  }
+
+  &__finishButton {
+    background-color: #ffffff;
+    border: 1.5px solid #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.3s,
+    color 0.3s;
+
+    &:hover {
+      box-shadow: none;
+      color: #1f1f1f;
+      background-color: #b6b5b5;
+    }
+
+    &.disabled {
+      border-color: #d1d6de;
+      background-color: #d1d6de;
+      color: #afbbcc;
+      border: 1px solid;
+    }
+  }
+}
+
+

@@ -1,0 +1,57 @@
+@import 'src/styles/font_style';
+@import '../../styles/devices.mixins';
+@import '../../styles/color.scss';
+
+.main {
+  height: calc(100vh - var(--page-header, 0));
+  //height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: var(--page-header-padding);
+  overflow: hidden;
+
+  @include small-desktop {
+    gap: 14px;
+  }
+  @include tablet-width {
+    gap: 14px;
+  }
+}
+
+.mainContentContainer {
+  flex: 2;
+  height: 100%;
+  padding: 14px 24px 24px 24px;
+  border: 1px solid $interactionBorderColor;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @include tablet-width {
+    padding: 14px;
+  }
+}
+.sideContentContainer {
+  flex: 1;
+  max-width: 403px;
+  height: 100%;
+  padding: 24px;
+  padding-right: 10px;
+  border: 1px solid $interactionBorderColor;
+  border-radius: 10px;
+  overflow-y: scroll;
+  @include tablet-width {
+    padding: 14px;
+  }
+}
+
+footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+
+  height: 54px;
+  align-items: center;
+}

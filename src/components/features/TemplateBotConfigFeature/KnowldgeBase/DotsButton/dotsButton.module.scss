@@ -1,0 +1,18 @@
+@import '../../../../../styles/color.scss';
+@import '../../../../../styles/fonts.scss';
+.label {
+  font-family: $helvetica;
+  color: $text-color;
+  font-size: 16px;
+}
+
+.menuItemHolder {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 7px;
+  width: 100%;
+}
+.disabled {
+  display: none;
+}

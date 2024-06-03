@@ -1,0 +1,111 @@
+@import '../../../../styles/color.scss';
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/devices.mixins';
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: var(--page-header-padding);
+  height: 90%;
+  position: relative;
+}
+
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.title {
+  font-family: $helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+
+  gap: 4px;
+}
+.template_holder {
+  width: 100%;
+  max-height: calc(100% - 73px);
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card {
+  padding: 14px;
+  width: 484px;
+  height: 224px;
+  border-radius: 10px;
+  border: 1px solid $grey;
+  gap: 18px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  // justify-content: space-between;
+
+  @include medium-desktop {
+    width: 435px;
+    height: 214px;
+  }
+  @include small-desktop {
+    width: 435px;
+    height: 214px;
+  }
+  position: relative;
+  &.active {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      z-index: 1000;
+    }
+  }
+  & .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 82px;
+    @include textStandard2429;
+    color: $text-color;
+    font-weight: 500;
+    @include medium-desktop {
+      @include textStandard20;
+      line-height: 24px;
+    }
+    @include small-desktop {
+      @include textStandard20;
+      line-height: 24px;
+    }
+  }
+  & .body {
+    width: 100%;
+    @include textStandard1624;
+    @include medium-desktop {
+      @include textStandard14;
+      line-height: 24px;
+    }
+    @include small-desktop {
+      @include textStandard14;
+      line-height: 24px;
+    }
+  }
+  & .footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../../styles/devices.mixins';
+
+:root {
+  --nav-bar-width: 283px;
+  --page-header: 109px;
+  --page-header-padding: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --nav-bar-width: 109px;
+    --page-header: 108px;
+    --page-header-padding: 14px;
+  }
+}
+
+@include laptop-width {
+  :root {
+    --nav-bar-width: 109px;
+    --page-header: 109px;
+    --page-header-padding: 14px;
+  }
+}
+
+@include smallTablet-width {
+  :root {
+    --nav-bar-width: 0px;
+    --page-header: 130px;
+    --page-header-padding: 14px;
+  }
+}
+
+@include mobile-width {
+  :root {
+    --nav-bar-width: 0px;
+    --page-header: 70px;
+    --page-header-padding: 0.5rem;
+  }
+}

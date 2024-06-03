@@ -1,0 +1,56 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+
+.label {
+  font-family: $helvetica, sans-serif;
+  color: $tableHeaderColor;
+  font-size: 16px;
+  @include navigation;
+}
+
+.applyBtn {
+  width: 80%;
+  padding: 8px 24px 8px 24px;
+}
+.menuHeader{
+  font-family: $helvetica, sans-serif;
+  color: $tableHeaderColor;
+  @include textStandard1624;
+  font-weight: 500;
+}
+.menuItem{
+  font-family:
+    Helvetica Neue,
+    sans-serif !important;
+  font-size: 16px!important;
+  font-weight: 400!important;
+  line-height: 19px!important;
+  height: 40px;
+  width: 100%;
+  padding-left: 5px;
+  margin-left: 10px;
+  
+  text-overflow: ellipsis!important;
+  overflow: hidden!important;
+  list-style-position: inside;
+  display: block!important;
+  color:$tableHeaderColor!important;
+  // white-space: nowrap!important;
+}
+.emptyLable{
+  margin-left: 10px;
+}
+.headerRow:first-child{
+    border-radius: 5px 0 0 5px;
+  
+}
+.headerRow:last-child{
+  border-radius: 0px 5px 5px 0px;
+
+}
+.divider{
+  width: 257px!important;
+  margin-left: 24px!important;
+  border-color: rgba(197, 202, 220, 1)!important;
+}

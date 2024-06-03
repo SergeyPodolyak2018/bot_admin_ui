@@ -1,0 +1,40 @@
+@import '../../styles/devices.mixins';
+@import '../../styles/text.mixins';
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.firstHandContainer {
+  position: absolute;
+  width: 910.2px;
+  height: 402.9px;
+  top: 206.3px;
+  left: -50.8px;
+}
+
+.firstHandContainer img {
+  position: absolute;
+  bottom: 0;
+}
+
+.secondHandContainer {
+  position: absolute;
+  width: 900.2px;
+  height: 402.9px;
+  top: 434.3px;
+  right: 0;
+  transform: rotateZ(-177.13deg);
+}
+
+.secondHandContainer img {
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,70 @@
+@mixin big-desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin medium-desktop {
+  @media screen and (max-width: 1792px) {
+    @content;
+  }
+}
+
+@mixin medium-desktop-1600 {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin regular-desktop {
+  @media screen and (min-width: 1221px) {
+    @content;
+  }
+}
+
+@mixin small-desktop {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin just-small-desktop {
+  @media screen and (max-width: 1440px) and (min-width: 1221px) {
+    @content;
+  }
+}
+
+@mixin laptop-width {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet-width {
+  @media screen and (max-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin smallTablet-width {
+  @media screen and (max-width: 834px) {
+    @content;
+  }
+}
+
+@mixin mobile-width {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin laptop-max-height-640 {
+  @media screen and (min-width: 481px) and (max-height: 640px) {
+    @content;
+  }
+}
+
+@mixin laptop-max-height-790 {
+  @media screen and (min-width: 481px) and (max-height: 790px) {
+    @content;
+  }
+}

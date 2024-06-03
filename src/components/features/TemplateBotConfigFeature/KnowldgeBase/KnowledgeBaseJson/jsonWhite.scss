@@ -1,0 +1,22 @@
+@import '../../../../../styles/color.scss';
+.jsoneditor-react-container {
+  & .jsoneditor {
+    border: thin solid #d9dbdf;
+  }
+  .jsoneditor-search {
+    display: flex;
+    flex-direction: row;
+  }
+  .jsoneditor-frame {
+    display: flex;
+  }
+  & .jsoneditor-menu {
+    background-color: $black;
+    border-bottom: 1px solid #d9dbdf;
+  }
+  & .jsoneditor-contextmenu {
+    .jsoneditor-menu {
+      background-color: $white;
+    }
+  }
+}

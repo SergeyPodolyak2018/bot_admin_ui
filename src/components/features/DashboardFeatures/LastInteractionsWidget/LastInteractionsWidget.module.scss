@@ -1,0 +1,11 @@
+@import '../../../../styles/devices.mixins';
+
+.main {
+  box-sizing: border-box !important;
+  flex-basis: calc((100%));
+  max-width: 100%;
+  min-height: 300px;
+  @include mobile-width {
+    flex-basis: calc((100%));
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../../../styles/devices.mixins';
+
+.text {
+  font-family: Helvetica Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+  color: rgba(115, 123, 139, 1);
+  @include mobile-width {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+.up {color: rgba(20, 157, 82, 1)}
+.down {color: rgba(242, 56, 58, 1)}
+
+.block {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  @include mobile-width {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,232 @@
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/color.scss';
+@import '../../../../styles/devices.mixins';
+.info {
+  .header {
+    font-family: $helvetica, sans-serif;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    @include tablet-width {
+      font-size: 14px;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid $interactionBorderColor;
+  padding-bottom: 24px;
+
+  .info__content {
+    font-family: $helvetica, sans-serif;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    // display: grid;
+    // grid-template-columns: 26px 130px 19px 1fr;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    @include tablet-width {
+      row-gap: 8px;
+    }
+
+    span {
+      font-size: 16px;
+      @include tablet-width {
+        font-size: 14px;
+      }
+    }
+
+    .detailHeader {
+      font-family: $helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      display: flex;
+      line-height: 24px;
+      @include tablet-width {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.detailHeader {
+  font-family: $helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  gap: 5px;
+  line-height: 24px;
+  @include tablet-width {
+    font-size: 14px;
+  }
+}
+
+.detailHeaderText {
+  font-family: $helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  @include tablet-width {
+    font-size: 14px;
+  }
+}
+
+.label {
+  display: grid;
+  grid-template-columns: 100px 15px max-content;
+  span {
+    font-family: $helvetica;
+  }
+}
+.linkLabel {
+  display: grid;
+  grid-template-columns: 100px 15px 240px 30px;
+
+  .detailHeaderLink {
+    line-height: 28px;
+  }
+  span {
+    font-family: $helvetica;
+    line-height: 28px;
+  }
+  a {
+    text-decoration: underline;
+    font-family: $helvetica;
+    font-size: 16px;
+    width: 100%;
+    line-height: 28px;
+    color: $text-color;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  .iconContainer {
+    display: inline-flex;
+    gap: 8px;
+  }
+
+  .labelContainer {
+    width: fit-content;
+    display: inline-flex;
+    gap: 8px;
+  }
+  .icon {
+    cursor: pointer;
+    justify-self: flex-end;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.tagsHolder {
+  display: inherit;
+  gap: 8px;
+  flex-wrap: wrap;
+  span {
+    font-size: 16px;
+    font-family: $helvetica;
+    @include small-desktop {
+      font-size: 14px;
+    }
+    @include tablet-width {
+      font-size: 14px;
+    }
+  }
+}
+
+.resultHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  span {
+    font-family: $helvetica;
+    font-size: 16px;
+    @include small-desktop {
+      font-size: 14px;
+    }
+    @include tablet-width {
+      font-size: 14px;
+    }
+  }
+}
+.inlineLabel {
+  display: grid;
+  grid-template-columns: 70px 20px 200px;
+  span {
+    font-family: $helvetica;
+  }
+}
+
+.keywordsLabel {
+  float: left;
+  line-height: 36px;
+}
+.container {
+  display: flex;
+  font-size: 16px;
+  color: $text-color;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 8px;
+  span {
+    letter-spacing: 0.38px;
+    font-size: 16px;
+    font-family: $helvetica;
+    color: $text-color;
+    width: 100%;
+  }
+}
+
+.tagsContainer {
+  font-size: 16px;
+  color: $text-color;
+  span {
+    letter-spacing: 0.38px;
+    font-size: 16px;
+    font-family: $helvetica;
+    color: $text-color;
+  }
+}
+.skeletonContainer {
+  display: inline-flex;
+  span {
+    text-wrap: nowrap;
+    letter-spacing: 0.38px;
+    font-size: 16px;
+    font-family: $helvetica;
+    color: $text-color;
+    line-height: 24px;
+  }
+}
+.containerInlineNoValue {
+  display: inline-flex;
+  gap: 16px;
+  span {
+    text-wrap: nowrap;
+    letter-spacing: 0.38px;
+    font-size: 16px;
+    font-family: $helvetica;
+    color: $text-color;
+    line-height: 24px;
+  }
+}
+.containerInline {
+  display: flex;
+  font-size: 16px;
+  color: $text-color;
+  flex-direction: column;
+  gap: 8px;
+  span {
+    letter-spacing: 0.38px;
+    font-size: 16px;
+    font-family: $helvetica;
+    color: $text-color;
+    line-height: 24px;
+  }
+}

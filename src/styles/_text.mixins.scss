@@ -1,0 +1,195 @@
+@import './devices.mixins';
+
+@mixin desctop-title {
+  font-weight: 700;
+  font-size: 48px;
+}
+//desktop
+@mixin h1-desktop {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+@mixin h2-desktop {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+@mixin h3-desktop {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+@mixin h4-desktop {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin h5-desktop {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@mixin h6-desktop {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+//small-desktop
+//font-weight and text-transform wil be inherit form a bigger desktop size
+@mixin h1-desktop-small {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+@mixin h2-desktop-small {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+@mixin h3-desktop-small {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin h4-desktop-small {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@mixin h5-desktop-small {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin h6-desktop-small {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+//tablet
+@mixin h1-tablet {
+  font-size: 96px;
+  line-height: 96px;
+}
+
+@mixin h2-tablet {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+@mixin h3-tablet {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+@mixin h4-tablet {
+  font-size: 32px;
+  line-height: 54px;
+}
+
+@mixin h5-tablet {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin h6-tablet {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+//mobile
+@mixin h1-mobile {
+  font-size: 46px;
+  line-height: 46px;
+}
+
+@mixin h2-mobile {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+@mixin h3-mobile {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin h4-mobile {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin h5-mobile {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin h5-boldDesktop {
+  color: var(--black, #22242c);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@mixin h6-mobile {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+//button
+@mixin button-desktop {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+@mixin button-desktop-small {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@mixin button-tablet {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@mixin button-mobile {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+//helper
+@mixin helper-desktop {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@mixin helper-desktop-small {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+@mixin helper-tablet {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@mixin helper-mobile {
+  font-size: 12px;
+  line-height: 12px;
+}

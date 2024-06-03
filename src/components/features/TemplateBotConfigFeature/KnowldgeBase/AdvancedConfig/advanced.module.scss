@@ -1,0 +1,62 @@
+@import '../../../../../styles/font_style.scss';
+@import '../../../../../styles/color.scss';
+
+.config {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.cellLabel {
+  padding: 7px;
+  font-family: $helvetica, sans-serif;
+  line-height: 24px;
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+
+.fieldHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 260px;
+  height: 79px;
+  gap: 8px;
+  opacity: 0px;
+  & .fieldName {
+    @include textStandard1624400;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+}
+
+.tooltipIcon {
+}
+.label {
+  @include textStandard1624400;
+  color: $text-dark;
+}
+.gridContainer {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.fiedsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+  height: 300px;
+  gap: 24px;
+  margin-top: 14px;
+}
+
+.fieldLabel {
+  font-family: $helvetica, sans-serif;
+  line-height: 24px;
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 400;
+}

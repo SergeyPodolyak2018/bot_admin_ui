@@ -1,0 +1,20 @@
+{
+  "jsxBracketSameLine": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "semi": true,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": "**/*.html",
+      "options": {
+        "printWidth": 120,
+        "singleAttributePerLine": false
+      }
+    }
+  ]
+}

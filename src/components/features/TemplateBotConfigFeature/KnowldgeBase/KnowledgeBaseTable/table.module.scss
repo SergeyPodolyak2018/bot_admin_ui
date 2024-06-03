@@ -1,0 +1,71 @@
+@import '../../../../../styles/fonts.scss';
+.mainContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 999;
+}
+
+.cellLabel {
+  padding: 7px;
+  font-family: $helvetica, sans-serif;
+  line-height: 24px;
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+.editInputStyles {
+  display: inline-flex;
+}
+.deleteHolder {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 24px;
+}
+
+.gridContainer {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 5px;
+  width: fit-content;
+}
+.sqere {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+}
+.triangle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  transform: rotate(45deg);
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.active {
+  background-color: green;
+}
+.nameHolder {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ag-theme-quartz {
+  border: none !important;
+}

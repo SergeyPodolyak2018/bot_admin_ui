@@ -1,0 +1,30 @@
+@import '../../../styles/color.scss';
+@import '../../../styles/fonts.scss';
+.base {
+  //     h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // p,
+  // span,
+  // div,
+  // button {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Roboto", sans-serif; */
+  color: var(--Black-Text, $text-color);
+  text-overflow: ellipsis;
+  /* 12 px | regular | Zultys */
+  font-family: $helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 166.667% */
+  // }
+}
+
+.h3 {
+  font-weight: 600;
+}

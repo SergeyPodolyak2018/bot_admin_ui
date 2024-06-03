@@ -1,0 +1,39 @@
+@import '../../../../styles/font_style.scss';
+
+.button {
+  height: fit-content;
+  width: fit-content;
+  background-color: #ffffff;
+  color: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  font-family: $helvetica, sans-serif;
+
+  transition:
+    box-shadow 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+
+  &:hover {
+    box-shadow: none;
+    color: white;
+    background-color: #1f1f1f;
+  }
+
+  &.selected {
+    box-shadow: none;
+    color: white;
+    background-color: #1f1f1f;
+  }
+
+  &.disabled {
+    border-color: rgba(201, 201, 201, 1);
+    background-color: rgba(201, 201, 201, 1);
+    color:rgba(255, 255, 255, 1);
+    border: 1px solid;
+  }
+}

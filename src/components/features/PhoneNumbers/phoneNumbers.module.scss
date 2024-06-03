@@ -1,0 +1,114 @@
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+@import '../../../styles/components.mixins.scss';
+.mainContainer{
+  width: calc(100% - 48px);
+  height: 100%;
+  margin: 0 auto;
+}
+.header{
+  margin-top: 24px;
+  & .fieldName{
+    @include textStandard1624;
+    font-weight: 700;
+    & span{
+      width:148px;
+      height: 24px;
+      @include textStandard1624;
+      font-weight: 700;
+    }
+  }
+}
+.tooltipIcon{
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+.subheader{
+  & .fieldName{
+    @include textStandard1624;
+    font-weight: 700;
+    height: 19px;
+
+  }
+  margin-top: 32px;
+}
+.fieldsContainer{
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  & .fieldName{
+    @include textStandard1624;
+    height: 19px;
+    line-height: 19px;
+
+  }
+}
+.field{
+  height: 52px;
+  margin-top: 8px;
+
+}
+.numbers{
+  width: 228px;
+}
+.customSelect{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0!important;
+  @include textStandard1624;
+  padding-right: 15px !important;
+
+  & button{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+     & span{
+      @include textStandard1624;
+      & span{
+        & svg{
+          width: 24px;
+          height: 17px;
+        }
+      }
+     }
+  }
+}
+.button{
+  width: 120px;
+  height: 48px;
+  padding: 18px 22px;
+  margin-top: 24px;
+  @include textStandard1619;
+  font-weight: 700;
+  
+}
+.tableContainer{
+  margin-top: 14px;
+}
+.placeholder{
+  @include textStandard1624;
+}
+.customSelect{
+  & fieldset{
+    top: -10px;
+  }
+  & ul{
+    width:258px;
+    height: 567px!important;
+    max-height: 567px;
+    border-radius: 5px;
+    margin-top: 4px;
+    @include textStandard1624;
+    @include scroller;
+    & li{
+      & span{
+        @include textStandard1624;
+        & svg{
+          width: 24px;
+          height: 17px;
+        }
+      }
+    }
+  }
+}

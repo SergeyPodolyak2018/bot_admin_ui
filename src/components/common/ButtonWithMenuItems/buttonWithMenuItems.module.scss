@@ -1,0 +1,135 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/color.scss';
+@import '../../../styles/devices.mixins';
+.button {
+  z-index: 350;
+  height: fit-content;
+  width: fit-content;
+  background-color: transparent;
+  color: $text-color;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 18px 32px;
+  display: flex;
+  gap: 10px;
+  // transition:
+  //   box-shadow 0.3s,
+  //   background-color 0.3s,
+  //   color 0.3s;
+
+  &:hover {
+    box-shadow: none;
+    // color: #1f1f1f;
+    // background-color: white;
+  }
+
+  &.disabled {
+    border-color: #1f1f1f;
+    background-color: rgba(99, 102, 241, 0);
+    color: #1f1f1f;
+    border: 1px solid;
+  }
+  font-family: $helvetica, sans-serif;
+}
+
+.disabledButton {
+  z-index: 350;
+  height: fit-content;
+  width: fit-content;
+  background-color: transparent;
+  color: $text-color;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+
+  opacity: 0.5;
+  pointer-events: none;
+  font-family: $helvetica, sans-serif;
+}
+
+.defaultButton {
+  @include mobile-width {
+    z-index: 350;
+    padding: 12px 24px 12px 24px;
+    background-color: transparent;
+    color: $text-color;
+    border: 1px solid rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 50px;
+    .label {
+      @include mobile-width {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+      }
+    }
+    &:hover {
+    }
+
+    &.disabled {
+      border-color: #1f1f1f;
+      background-color: rgba(99, 102, 241, 0);
+      color: #1f1f1f;
+      border: 1px solid;
+    }
+    font-family: $helvetica, sans-serif;
+    img {
+      display: none;
+    }
+  }
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: $helvetica, sans-serif;
+  @include tablet-width {
+    font-size: 16px;
+  }
+}
+
+.menuItemLabel {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $helvetica, sans-serif;
+  color: $text-color;
+}
+
+.menuItem {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  pointer-events: all;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.hoverEffect {
+  background-color: $hoveredBackground;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.label {
+  font-family: $helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 19.09px;
+  @include tablet-width {
+    font-size: 16px;
+  }
+}

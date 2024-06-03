@@ -1,0 +1,138 @@
+@import '@yaireo/tagify/dist/tagify.css';
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.tagify__input {
+  height: 300px;
+  overflow-y: scroll;
+
+  /* font-family: $helvetica, sans-serif; */
+  letter-spacing: inherit;
+  /* color: currentColor; */
+
+  border: 1px solid #9ca3b0;
+  border-radius: 10px;
+  box-sizing: content-box;
+  background: none;
+  /* -webkit-tap-highlight-color: transparent; */
+  display: block;
+  min-width: 0;
+  /* -webkit-animation-duration: 10ms;
+  animation-duration: 10ms; */
+  height: fit-content;
+  font-size: 16px;
+
+  outline: none;
+  border-bottom: 1px solid #919192;
+
+  &:hover {
+    outline: none;
+    border-bottom: 2px solid #919192;
+  }
+  & i {
+    background: linear-gradient(
+      0deg,
+      rgb(0, 60, 255) 0%,
+      rgb(38, 78, 255) 3%,
+      rgb(255, 255, 255) 30%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}
+.tagify--mix .tagify__input {
+  padding: 8px 14px 8px 14px;
+}
+
+.tags-input {
+  width: calc(100% - 30px);
+  height: calc(100% - 34px);
+}
+
+.ag-theme-quartz {
+  --ag-borders: none;
+  --ag-header-background-color: #f6f9ff;
+}
+.tagify {
+  height: 100%;
+  border: none;
+  /* margin-bottom: 3em; */
+  --tag-bg: #1f1f1f;
+  --tag-text-color: white;
+  --tag-text-color--edit: var(--tag-bg);
+  --tag-hover: #1f1f1f6e;
+  --tag-remove-btn-color: white;
+}
+
+/* .tagify__tag:hover .tagify__tag__removeBtn {
+  transform: none;
+  opacity: 1;
+  margin-left: -1ch;
+} */
+
+.tagify__tag:focus div::before,
+.tagify__tag:hover:not([readonly]) div::before {
+  --tag-bg-inset: -2.5px;
+  background-color: #1f1f1f;
+  --tag-bg: #1f1f1f6e;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+}
+
+.stop-point,
+.stop-point-center,
+.stop-point-end {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.stop-point-center {
+  scroll-snap-align: center;
+}
+
+.stop-point-end {
+  scroll-snap-align: end;
+}
+
+@media only screen and (max-width: 1024px) {
+  .stop-point,
+  .stop-point-center,
+  .stop-point-end {
+    scroll-snap-align: unset;
+    scroll-snap-stop: unset;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .stop-point,
+  .stop-point-center,
+  .stop-point-end {
+    scroll-snap-align: unset;
+    scroll-snap-stop: unset;
+  }
+}
+
+.MuiButtonBase-root .Mui-selected {
+  background-color: #1f1f1f !important;
+}

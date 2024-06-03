@@ -1,0 +1,41 @@
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/color.scss';
+.content {
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 16px;
+  font-family: $helvetica;
+  color: $text-color;
+}
+.deleteLabel {
+  word-wrap: break-word;
+  white-space: break-spaces;
+  color: $text-color;
+  font-family: inherit;
+  font-size: 16px;
+}
+.boldLabel {
+  color: $text-color;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+}
+.header {
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.body {
+  font-family: inherit;
+  font-size: 16px;
+}

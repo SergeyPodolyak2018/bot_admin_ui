@@ -1,0 +1,52 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/color.scss';
+.option {
+  cursor: grab;
+  padding: 8px 24px 8px 17px;
+  width: fit-content;
+  display: inline-flex;
+  border-radius: 50px;
+  border: 1px solid #9ca3b0;
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: gray;
+    background-color: #d8dbdf;
+    .label {
+      color: gray;
+    }
+  }
+  .closeButton {
+    display: none;
+  }
+  .icon {
+    display: flex;
+  }
+  &.dropped {
+    cursor: default;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+    .icon {
+      display: none;
+    }
+
+    .closeButton {
+      cursor: pointer;
+      pointer-events: all;
+      display: flex;
+      align-items: center;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .label {
+    font-family: $helvetica, sans-serif;
+    color: $text-color;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    text-wrap: nowrap;
+  }
+}

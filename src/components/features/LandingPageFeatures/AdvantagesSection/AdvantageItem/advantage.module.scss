@@ -1,0 +1,63 @@
+@import '../../../../../styles/devices.mixins';
+@import '../../../../../styles/text.mixins';
+.row {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+
+  @include smallTablet-width {
+    flex-direction: column;
+  }
+  @include mobile-width {
+    flex-direction: column;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  @include smallTablet-width {
+    flex-direction: column;
+  }
+  @include mobile-width {
+    flex-direction: column;
+  }
+}
+
+.image {
+  flex: 1;
+  background-color: #192238;
+  max-height: 224px;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  color: white;
+  background-color: #192238;
+  min-height: 224px;
+  p {
+    margin: 0;
+  }
+
+  .contentBody {
+    padding: 24px;
+  }
+
+  .title {
+    @include h4-desktop;
+    font-family: 'Manrope', sans-serif;
+    text-transform: initial;
+    margin-bottom: 12px;
+  }
+
+  .text {
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    @include h6-desktop;
+    font-family: 'Manrope', sans-serif;
+    text-transform: initial;
+  }
+}

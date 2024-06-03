@@ -1,0 +1,133 @@
+@import '../../../../../../styles/color';
+@import '../../../../../../styles/font_style';
+@import '../../../../../../styles/devices.mixins';
+
+.linkButton {
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: $text-color;
+  padding: 7px 0 7px 0;
+  gap: 0.8rem;
+  @include navigation;
+}
+
+.holder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 8px;
+  padding: 7px 12px 7px 12px;
+  border-radius: 5px;
+  &:hover {
+    background-color: $hoveredBackground;
+  }
+}
+
+.holderContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.textWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+}
+.textHolder {
+  font-family: $helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  line-height: 24px;
+}
+
+.iconHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:
+    bottom center,
+    50%,
+    50%;
+}
+
+.grayedOut {
+  opacity: 0.5;
+}
+
+.active {
+  background-color: $selected-baground;
+
+  &:hover {
+    background-color: $selected-baground;
+  }
+}
+
+.disabled {
+  background-color: $disabledBackground;
+  width: 100%;
+  height: fit-content;
+  user-select: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: $disabled-text-color;
+  padding: 7px 12px 7px 12px;
+  gap: 8px;
+  @include navigation;
+  pointer-events: none;
+  cursor: default;
+  :hover {
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .linkButton {
+    justify-content: center;
+    width: 42px;
+    .holder {
+      padding: 7px 12px 7px 9px;
+    }
+  }
+  .textHolder {
+    display: none;
+  }
+}
+
+@include laptop-width {
+  .linkButton {
+    justify-content: center;
+    width: 42px;
+    .holder {
+      padding: 7px 12px 7px 9px;
+    }
+  }
+  .textHolder {
+    display: none;
+  }
+}
+
+@include smallTablet-width {
+  .linkButton {
+    justify-content: center;
+    width: 100%;
+    .holder {
+      padding: 7px 12px 7px 9px;
+    }
+  }
+  .textHolder {
+    display: flex;
+  }
+}

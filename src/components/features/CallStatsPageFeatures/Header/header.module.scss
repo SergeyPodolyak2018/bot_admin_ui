@@ -1,0 +1,76 @@
+@import '../../../../styles/color.scss';
+@import '../../../../styles/fonts.scss';
+
+.container {
+  width: 100%;
+  border-bottom: 1px solid $interactionBorderColor;
+  padding-bottom: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 24px;
+}
+
+.buttonHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.conversationBtn {
+  width: 171px;
+  height: 40px;
+  font-family: Helvetica Neue, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  line-height: 15px;
+  font-family: $helvetica;
+  color: $text-color;
+}
+
+.filterButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  border: 1px solid $interactionBorderColor;
+  padding: 8px 14px 8px 14px;
+  cursor: pointer;
+
+  span {
+    font-family: $helvetica;
+    color: $text-color;
+    font-size: 16px;
+  }
+}
+
+.dropDownIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

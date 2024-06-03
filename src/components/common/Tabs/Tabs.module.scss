@@ -1,0 +1,81 @@
+@import '../../../styles/color.scss';
+@import '../../../styles/fonts.scss';
+@import '../../../styles/devices.mixins';
+.wrapper {
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  @include mobile-width {
+    width: 100%;
+    gap: 4px;
+    overflow-x: scroll;
+  }
+}
+
+.wrapper .button:first-child {
+  margin-left: 0px;
+}
+.wrapper .button:nth-child(2) {
+  margin-left: -18px;
+  @include tablet-width {
+    margin-left: -10px;
+  }
+  @include mobile-width {
+    margin-left: 0px;
+  }
+}
+.wrapper .button:nth-child(3) {
+  margin-left: -20px;
+  @include tablet-width {
+    margin-left: -10px;
+  }
+  @include mobile-width {
+    margin-left: 0px;
+  }
+}
+.wrapper .button:nth-child(4) {
+  margin-left: -19px;
+  @include tablet-width {
+    margin-left: -10px;
+  }
+  @include mobile-width {
+    margin-left: 0px;
+  }
+}
+.button {
+  box-shadow: 2px 0px 4px 0px #72747940;
+
+  margin-left: -18px;
+  border-radius: 10px 10px 0px 0px;
+  padding: 14px 54px 14px 54px;
+  height: fit-content;
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $helvetica, sans-serif;
+  height: 48px;
+  @include tablet-width {
+    padding: 14px 28px 14px 28px;
+  }
+  &.disactive {
+    color: #666666;
+    background-color: #f2f2f2;
+    border: 1px solid #d8dbdf;
+  }
+
+  @include mobile-width {
+    height: fit-content;
+    text-wrap: nowrap;
+    line-height: 16px;
+    margin: 0;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 12px 14px 12px 14px;
+  }
+}

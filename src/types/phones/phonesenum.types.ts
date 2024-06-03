@@ -1,0 +1,4 @@
+export enum PHONE_NUMBER_STATUS {
+  PAID = 'PAID',
+  SUSPENDED = 'SUSPENDED',
+}

@@ -1,0 +1,293 @@
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/devices.mixins';
+@import '../../../../styles/text.mixins';
+
+.section {
+  height: 100vh;
+  padding-top: 146px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: initial;
+  // padding-top: 40px;
+  @include small-desktop {
+    height: calc(100vh - 55px);
+    // padding-top: 40px;
+  }
+  @include tablet-width {
+    height: calc(100vh - 100px);
+    // padding-top: 40px;
+  }
+  @include mobile-width {
+    padding-top: 40px;
+  }
+
+  @include laptop-max-height-790 {
+    padding-top: 120px;
+    min-height: calc(100vh - 120px);
+    height: fit-content;
+  }
+  @include laptop-max-height-640 {
+    padding-top: 120px;
+    height: fit-content;
+    min-height: calc(100vh - 120px);
+  }
+  &__title {
+    font-family: $helvetica, sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 44px;
+    color: #1f1f1f;
+    @include medium-desktop {
+      margin-bottom: 44px;
+    }
+    @include small-desktop {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 44px;
+    }
+
+    @include tablet-width {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 44px;
+    }
+    @include smallTablet-width {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+    @include mobile-width {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+
+    @include laptop-max-height-790 {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 14px;
+    }
+    @include laptop-max-height-640 {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.container {
+  background-color: #f6f9ff;
+  border: 1px #9ca3b0 solid;
+  width: 100%;
+  border-radius: 20px;
+  // height: 100%;
+  // margin-bottom: 222px;
+
+  .content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    @include tablet-width {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @include mobile-width {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    @include laptop-max-height-790 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @include laptop-max-height-640 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .emptyArea {
+      width: 33%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .titleHolder {
+      display: flex;
+      width: 100%;
+      gap: 24px;
+      flex-direction: column;
+      @include medium-desktop {
+        gap: 16px;
+      }
+      @include tablet-width {
+        gap: 16px;
+      }
+      @include laptop-max-height-790 {
+        gap: 16px;
+      }
+      @include laptop-max-height-640 {
+        gap: 16px;
+      }
+      .demoCallStatus {
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        @include mobile-width {
+        }
+
+        span {
+          color: #666666;
+          font-family: $helvetica, sans-serif;
+          font-size: 16px;
+        }
+        .item {
+          width: 10px;
+          height: 10px;
+          background-color: #f4294d;
+          border-radius: 50%;
+
+          &.active {
+            background-color: #29f493;
+          }
+        }
+      }
+    }
+    .chooseCategoryWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+      @include medium-desktop {
+        gap: 16px;
+      }
+      @include tablet-width {
+        gap: 16px;
+      }
+      @include mobile-width {
+        gap: 8px;
+      }
+      @include laptop-max-height-790 {
+        gap: 24px;
+      }
+      @include laptop-max-height-640 {
+        gap: 8px;
+      }
+      .categories {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        z-index: 999;
+
+        &__button {
+          width: fit-content;
+          padding: 12px 20px 12px 20px;
+          height: 43px;
+          font-size: 16px;
+          font-family: $helvetica, sans-serif;
+          @include tablet-width {
+            height: 35px;
+          }
+          @include mobile-width {
+            padding: 4px 8px 4px 8px;
+            font-size: 12px;
+          }
+          @include laptop-max-height-790 {
+            // font-size: 14px;
+            // padding: 6px 10px 6px 10px;
+          }
+          @include laptop-max-height-640 {
+            font-size: 14px;
+            padding: 6px 10px 6px 10px;
+          }
+        }
+      }
+
+      .categoryLabel {
+        color: #666666;
+        font-size: 16px;
+        line-height: 24px;
+
+        @include mobile-width {
+          text-align: center;
+        }
+      }
+
+      .label {
+        color: #666666;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: $helvetica, sans-serif;
+        @include mobile-width {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+
+      .imageHolder {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .title {
+      font-family: $helvetica, sans-serif;
+      @include h3-desktop;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1f1f1f;
+
+      @include small-desktop {
+        @include h4-desktop;
+      }
+
+      @include tablet-width {
+        @include h5-tablet;
+        line-height: 16px;
+      }
+      @include smallTablet-width {
+        @include h4-tablet;
+      }
+      @include mobile-width {
+        @include h4-mobile;
+      }
+
+      @include laptop-max-height-790 {
+        font-size: 24px;
+      }
+      @include laptop-max-height-640 {
+        font-size: 24px;
+      }
+    }
+
+    .buttonHolder {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+}
+
+.audioHolder {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+
+  @include laptop-max-height-790 {
+    gap: 24px;
+  }
+}

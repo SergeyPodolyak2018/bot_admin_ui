@@ -1,0 +1,40 @@
+@import '../../../../../../styles/font_style';
+@import '../../../../../../styles/color';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.nameHolder {
+  @include modalFormTitle;
+  display: flex;
+  align-items: center;
+  //font-size: 1.2rem;
+  //padding: 1rem 1.5rem;
+  font-size: 1.13rem;
+  padding: 1.55rem 1.5rem;
+  justify-content: space-around;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .nameHolder {
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    height: 70px;
+    gap: 10px;
+    font-family:
+      Helvetica Neue,
+      serif;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 13px;
+  }
+}

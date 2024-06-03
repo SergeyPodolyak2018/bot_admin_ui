@@ -1,0 +1,42 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/color.scss';
+.container {
+  width: 100%;
+  padding: var(--page-header-padding);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100% - var(--page-header));
+  overflow-y: auto;
+
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .balance {
+    font-weight: bold;
+  }
+  .title {
+    font-family: $helvetica, sans-serif;
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cardsHolder {
+    width: 100%;
+    display: inline-flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    .footer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}

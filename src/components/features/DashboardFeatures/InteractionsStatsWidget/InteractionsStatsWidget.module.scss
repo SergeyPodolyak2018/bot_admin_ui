@@ -1,0 +1,22 @@
+@import '../../../../styles/devices.mixins';
+
+.main {
+  box-sizing: content-box !important;
+  flex-basis: calc((100% / 3 * 2) + 24px);
+  @include small-desktop {
+    flex-basis: 100%;
+  }
+  @include tablet-width {
+    flex-basis: 100%;
+  }
+  @include smallTablet-width {
+    flex-basis: 100%;
+  }
+  @include mobile-width {
+    flex-basis: 100%;
+  }
+
+
+
+
+}

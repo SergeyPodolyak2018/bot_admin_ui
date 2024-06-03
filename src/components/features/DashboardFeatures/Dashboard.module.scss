@@ -1,0 +1,220 @@
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+@import '../../../styles/components.mixins.scss';
+@import '../../../styles/devices.mixins';
+.mainContainer{
+  width: calc(100% - 18px);
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 20px;
+}
+.header{
+  margin-top: 24px;
+  & .fieldName{
+    @include textStandard1624;
+    font-weight: 700;
+    & span{
+      width:148px;
+      height: 24px;
+      @include textStandard1624;
+      font-weight: 700;
+    }
+  }
+}
+.tooltipIcon{
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+.subheader{
+  & .fieldName{
+    @include textStandard1624;
+    font-weight: 700;
+    height: 19px;
+
+  }
+  margin-top: 32px;
+}
+.fieldsContainer{
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  & .fieldName{
+    @include textStandard1624;
+    height: 19px;
+    line-height: 19px;
+  }
+
+  @include mobile-width {
+    justify-content: center;
+  }
+}
+.field{
+  height: 52px;
+  margin-top: 8px;
+
+}
+.numbers{
+  width: 228px;
+}
+.customSelect{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0!important;
+  @include textStandard1624;
+  padding-right: 15px !important;
+
+  & button{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+     & span{
+      @include textStandard1624;
+      & span{
+        & svg{
+          width: 24px;
+          height: 17px;
+        }
+      }
+     }
+  }
+}
+.button{
+  width: 120px;
+  height: 48px;
+  padding: 18px 22px;
+  margin-top: 24px;
+  @include textStandard1619;
+  font-weight: 700;
+
+}
+.tableContainer{
+  margin-top: 14px;
+}
+.placeholder{
+  @include textStandard1624;
+}
+.customSelect{
+  & fieldset{
+    top: -10px;
+  }
+  & ul{
+    width:258px;
+    height: 567px!important;
+    max-height: 567px;
+    border-radius: 5px;
+    margin-top: 4px;
+    @include textStandard1624;
+    @include scroller;
+    & li{
+      & span{
+        @include textStandard1624;
+        & svg{
+          width: 24px;
+          height: 17px;
+        }
+      }
+    }
+  }
+}
+
+.fieldHolder {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+
+  >div:first-child {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile-width {
+      display: none;
+    }
+  }
+
+  @include mobile-width {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.widgetsContainer {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+.row {
+
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @include mobile-width {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  @include tablet-width {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @include small-desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+
+
+  //>div:not(:first-child) {
+  //  margin-left: 0px;
+  //}
+  //>div {
+  //  box-sizing: content-box !important;
+  //}
+}
+
+.flex2 {
+  display: flex;
+  flex: 2;
+  gap: 24px;
+  height: 100%;
+  @include mobile-width {
+    flex: 3;
+    flex-direction: column;
+  }
+}
+
+.flex1 {
+  display: flex;
+  flex:1;
+}
+
+.col-1 {
+  flex-basis: calc((100% / 3));
+}
+
+.col-2 {
+  flex-basis: calc((100% / 3 * 2) + 24px);
+}
+
+.refresh {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  span {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #1F1F1F;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../../styles/color';
+.button {
+  width: 19px;
+  height: 19px;
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/exit.svg');
+  cursor: pointer;
+}

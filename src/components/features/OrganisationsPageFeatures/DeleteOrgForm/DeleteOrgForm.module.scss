@@ -1,0 +1,48 @@
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/color.scss';
+@import '../../../../styles/components.mixins.scss';
+.content {
+  width: 529px;
+  height: 336px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid;
+  border-image-source: radial-gradient(49.59% 163.62% at 49.59% 50.75%, #9CA3B0 0%, #666F80 0.01%, rgba(156, 163, 176, 0.01) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  radial-gradient(50% 164.97% at 50% 50%, #9CA3B0 0%, rgba(156, 163, 176, 0.01) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  
+  
+}
+.title{
+  @include headerTextPopUp;
+  padding: 0!important;
+  margin-top: 40px!important;
+  margin-left: 44px!important;
+}
+.explanation{
+  width: 441px;
+  margin-top: 24px;
+  @include textStandard1624400;
+  padding: 0!important;
+  margin-left: 44px!important;
+  color:$tableHeaderColor!important;
+}
+.inputCustom{
+  width: 441px;
+  height:52px;
+  background-color: rgba(246, 249, 255, 1);
+  margin-left: 44px!important;
+  margin-top: 24px;
+  padding-left: 14px;
+  @include textStandard1624400;
+  &::after{
+    display:none;
+  }
+  &::before{
+    display:none;
+  }
+
+}
+.button{
+  width:200px;
+  height: 52px;
+}

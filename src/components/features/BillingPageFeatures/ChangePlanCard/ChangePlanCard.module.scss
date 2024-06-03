@@ -1,0 +1,80 @@
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/color.scss';
+.subsCard {
+  width: 379px;
+  height: 274px;
+  border-radius: 20px;
+  border: 1px solid #9ca3b0;
+  padding: 24px;
+  gap: 8px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  .subsHeader {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .subsTitle {
+      font-family: $helvetica, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $tableHeaderColor;
+      font-size: 18px;
+      line-height: 27px;
+
+    }
+    .subsDate {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid rgba(102, 102, 102, 1);
+      width: 111px;
+      height: 39px;
+      padding: 10px 13px;
+      border-radius: 50px;
+      font-family: $helvetica, sans-serif;
+      color: $tableHeaderColor;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  .subsDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .descTitle {
+      font-family: $helvetica, sans-serif;
+      color: $tableHeaderColor;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 8px;
+    }
+    .descLabel {
+      width: 375px;
+      font-family: $helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $tableHeaderColor;
+    }
+  }
+}
+.footer{
+  //margin-top: 38px;
+  & button{
+    @include textStandard1619;
+    font-weight: 700;
+    padding:18px 25px
+  }
+}
